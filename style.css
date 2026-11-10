@@ -1,7 +1,7 @@
 * {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -15,6 +15,90 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 :root{
     --green: rgb(176,255,50);
     --blue: rgb(0, 51, 153);
-    --fucsia: rgb(244, 0, 161);
+    --fucsia: rgb(245, 125, 241);
 }
 
+.navbar{
+    background-color: var(--green) !important;
+}
+
+.navbar .navbar-brand{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.navbar .nav-link{
+    color: var(--blue) !important;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-image: url("https://img.freepik.com/premium-photo/abstract-ethereal-painting-background_670382-171009.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    
+}
+
+#titolo{
+    font-size: 90px;
+}
+
+.buttons{
+    background-color:  var(--green);
+    border: 2px solid;
+    border-color: var(--blue);
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 8px;
+}
+
+.buttons:hover{
+    transform: scale(1.1);
+}
+
+#sezione1{
+    background-color: var(--green);
+    position: relative;
+    top: -40px;
+}
+
+body{
+    background-color: var(--fucsia);
+}
+
+.colonne{
+    border: 2px solid; 
+    color: var(--blue);
+    transition: 0.5s;
+    background-color: var(--green);
+}
+
+.colonne:hover{
+     transform: scale(1.1);
+}
+
+#sezione2{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#aboutUs{
+   font-size: 50px;
+}
+
+.number{
+    font-weight: bolder;
+
+}

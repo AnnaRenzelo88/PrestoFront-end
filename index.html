@@ -1,30 +1,131 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    
-    <!--Google fonts-->   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-    
-    <!--css bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-    <!--css custom-->
-    
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presto</title>
+  
+  <!--Google fonts-->   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  
+  <!--css bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!--css custom-->
+  
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-    <h1>Hello, world!</h1>
+  
+  <!--navbar-->
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bolder" href="#"><i class="fa-solid fa-mug-hot fa-2x"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Annunci</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chi siamo</a>
+          </li>
+          <li class="nav-item">
+            
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!--navbar end-->
+  
+  
+  <!--header-->
+  <header class="container-fluid d-flex">
+    <div class="row w-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 id="titolo" class="text-center justify-content-center">Presto.it</h1>
+        <div class="d-flex justify-content-center align-items-center">
+          <button class="buttons text-center m-2">Clicca qui</button>
+          <button class="buttons text-center m-2">Clicca qui</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!--header end-->
+  
+  <!--sezione 1-->
+  <section id="sezione1" class="container">
+    <div class="class row justify-content-center">
+      
+      <div class="col-12 col-md-4 text-center colonne">
+        <h3 class="mt-2">Colonna 1</h3>
+        <p class="mt-2" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum autem neque ipsa, maxime omnis at esse corrupti vitae? Vero at, a amet optio sunt cum esse ipsum recusandae et.</p>
+      </div>
+      <div class="col-12 col-md-4 text-center colonne">
+        <h3 class="mt-2">Colonna 2</h3>
+        <p class="mt-2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veritatis vero dignissimos officiis explicabo pariatur omnis officia cum. Ipsa voluptatum delectus tempore quas, impedit debitis laudantium ullam. Veniam, quam ipsa.</p>
+      </div>
+      <div class="col-12 col-md-4 text-center colonne">
+        <h3 class="mt-2">Colonna 3</h3>
+        <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fuga non totam commodi asperiores voluptates nam cum, dignissimos nulla. Nostrum inventore repudiandae unde dolorem pariatur sed tempore hic a in?</p>
+      </div>
+      
+    </div>
     
-    <!--js bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
-    <!--js custom-->    
-    <script src="main.js"></script>
+  </section>
+  
+  <!--sezione 1 end-->
+  
+  <!--sezione 2-->
+  
+  <section id="sezione2" class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuMqnUbd-mc7Tb9NqRs5_JMHqSy8ZBoIVW3Tmcpzm2Ng&s=10" alt="immagine taccuino">
+      </div>
+      <div class="col-12 col-md-6 d-flex flex-column justify-content-center text-center">
+        <h3 id="aboutUs" >About us</h3>
+        <p> <div id="first" class="number">0</div>  Clienti</p>
+        <p> <div id="second" class="number">0</div>  Prodotti venduti</p>
+        <p> <div id="third" class="number">0</div>  Spedizioni</p>
+        
+        
+      </div>
+      
+      
+    </div>
+    
+  </section>
+  
+  
+  <!--sezione 2 end-->
+  
+  <!--footer-->
+  <footer class="container">
+    
+  </footer>
+  <!--footer end-->
+  
+  <!--js bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+  <!--js custom-->    
+  <script src="main.js"></script>
 </body>
 </html>
