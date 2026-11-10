@@ -1,5 +1,4 @@
 let numbers = document.querySelectorAll('.number');
-
 let confirm = true;
 
 function createInterval(n, element, time){
@@ -33,8 +32,7 @@ let observer = new IntersectionObserver(  (entries)=>{
             createInterval(200, second, 20);
             createInterval(300, third, 10);
             confirm = false;
-        
-
+    
             
     
         }

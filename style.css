@@ -3,7 +3,9 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  color: var(--blue);
 }
+
 
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   font-family: "Caveat", cursive;
@@ -12,21 +14,25 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   font-style:normal;
 }
 
+
 :root{
     --green: rgb(176,255,50);
     --blue: rgb(0, 51, 153);
     --fucsia: rgb(245, 125, 241);
 }
 
+
 .navbar{
     background-color: var(--green) !important;
 }
+
 
 .navbar .navbar-brand{
     color: var(--blue);
     font-weight: bold;
     font-size: larger;
 }
+
 
 .navbar .nav-link{
     color: var(--blue) !important;
@@ -36,23 +42,26 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     font-size: 30px;
 }
 
+
 .navbar-nav{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
+
 header{
     background-image: url("https://img.freepik.com/premium-photo/abstract-ethereal-painting-background_670382-171009.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 600px;
-    
 }
+
 
 #titolo{
     font-size: 90px;
 }
+
 
 .buttons{
     background-color:  var(--green);
@@ -63,9 +72,11 @@ header{
     padding: 8px;
 }
 
+
 .buttons:hover{
     transform: scale(1.1);
 }
+
 
 #sezione1{
     background-color: var(--green);
@@ -73,9 +84,11 @@ header{
     top: -40px;
 }
 
+
 body{
     background-color: var(--fucsia);
 }
+
 
 .colonne{
     border: 2px solid; 
@@ -84,21 +97,47 @@ body{
     background-color: var(--green);
 }
 
+
 .colonne:hover{
      transform: scale(1.1);
 }
 
+
 #sezione2{
-    color: var(--blue);
     font-weight: bold;
     font-size: xx-large;
 }
+
 
 #aboutUs{
    font-size: 50px;
 }
 
+
 .number{
     font-weight: bolder;
+}
 
+
+#contatti{
+    height: 100px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: var(--blue);
+    font-size: 50px;
+}
+
+
+.details{
+    height: 20px;
+    font-weight:lighter;
+    font-size: small;
+    color: var(--blue);
+    font-size: 15px;
+}
+
+
+footer{
+     background-color: var(--green);
+     min-height: 200px;
 }
