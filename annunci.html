@@ -54,46 +54,95 @@
   
   
   <!--header-->
-  <header class="container-fluid d-flex">
-    <div class="row w-100">
-      <div class="col-12 text-center">
-        <h1 id="titolo" class="justify-content-center">Pagina degli annunci</h1>
+  <header class="container-fluid text-center">
+    <h1 id="titolo">Pagina degli annunci</h1>
+
+    <div class="row">
+      
+
+
+      <!--COLONNA DX-->
+      <div class="col-12 col-md-3">
+        
+        <!--accordion-->
+        <div id="accordion" class="accordion d-flex flex-column align-items-start ps-4">
+          <h3>Filtra per</h3>
+          <details open> 
+            
+            <!--filtro categoria con radio buttons-->
+            <summary>Categorie</summary> 
+            <div id="categoryContainer">
+              <div class="form-field">
+                <input class="radio" name="radios" type="radio" id="All" />
+                <label for="radioLabel">Tutte le categorie</label>
+              </div>
+            </div>
+          </details>
+          
+          
+          <!--filtro prezzo-->
+          <details open> 
+            <summary>Prezzo</summary> 
+            <div class="form-field">
+              <input id="typeInput" type="range" min="0" max="">
+              <p id="priceValue">0 </p>
+            </div>
+          </details>
+          
+          <!--filtro parola-->
+          <details open> 
+            <summary>Parola</summary> 
+            <div class="form-field">
+              <input class="mb-3" id="textInput" type="text">
+              
+            </div>
+          </details>
+          
         </div>
+        </div>
+        
+      <!--COLONNA SINISTRA-->
+
+      <div class="col-12 col-md-9">
+        <div id="cardWrapper" class="d-flex flex-wrap gap-2">
+        
+      
       </div>
     </div>
-  </header>
-  
-  <!--header end-->
-  
+  </div>
+</header>
+
+<!--header end-->
 
 
-  <!--sezione 1-->
- 
-  <!--sezione 1 end-->
-  
 
-  <!--sezione 2-->
-  
-  <!--sezione 2 end-->
-  
+<!--sezione 1-->
+
+<!--sezione 1 end-->
 
 
-  <!--footer-->
-  <footer class="container-fluid">
-    <div class="row mt-5">
-      <div id="contatti" class="col-12 text-center">Contatti
+<!--sezione 2-->
+
+<!--sezione 2 end-->
+
+
+
+<!--footer-->
+<footer class="container-fluid">
+  <div class="row mt-5">
+    <div id="contatti" class="col-12 text-center">Contatti
       <p class="details">E-mail</p>
       <p class="details">Indirizzo</p>
       <p class="details">Pagine social</p>
     </div>
-    </div>
-  </footer>
-  <!--footer end-->
-  
-  <!--js bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  
-  <!--js custom-->    
-  <script src="annunci.js"></script>
+  </div>
+</footer>
+<!--footer end-->
+
+<!--js bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!--js custom-->    
+<script src="annunci.js"></script>
 </body>
 </html>
