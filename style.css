@@ -145,6 +145,9 @@ footer{
 .accordion{
     border: 1px solid;
     border-radius: 20px;
+    position: sticky;
+    top: 80px;
+    z-index: 100;
 }
 
 #categoryContainer{

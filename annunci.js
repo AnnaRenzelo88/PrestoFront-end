@@ -43,26 +43,30 @@ function showCards(array){
 showCards(data);
 
 
-
-function filterByCategory(categoria){
-    if(categoria.toLowerCase() == 'all'){
-    showCards(data);   
-    return;
-    }else{
-    let filtered = data.filter((annuncio)=>annuncio.category.toLowerCase() == categoria.toLowerCase());
-    showCards(filtered);
-
-};
-};
-
-
-
-
 let radioButtons = document.querySelectorAll('.radio');
-radioButtons.forEach(  (button)=>{
+
+let categoria = Array.from(radioButtons).find(  (button)=> button.checked).id;
+
+
+
+function filterByCategory(array){
+    let categoria = Array.from(radioButtons).find(  (button)=> button.checked).id;
+    if(categoria.toLowerCase() == 'all'){
+    return(array);
+    }else{
+    let filtered = array.filter((annuncio)=>annuncio.category.toLowerCase() == categoria.toLowerCase());
+    return filtered;
+
+};
+
+};
+
+
+
+    radioButtons.forEach(  (button)=>{
 
     button.addEventListener('click', ()=>{
-    filterByCategory(button.id);
+    globalFilter();
     
     });
     
@@ -84,28 +88,36 @@ priceValue.innerHTML = maxPrice;
 
 setPriceInput();
 
-function filterByPrice(){
-    let filtered = data.filter( (annuncio)=>  annuncio.price <= typeInput.value);
-    showCards(filtered);
+function filterByPrice(array){
+    let filtered = array.filter( (annuncio)=>  annuncio.price <= typeInput.value);
+    return (filtered);
 }
 
 typeInput.addEventListener( 'input', ()=>{
     priceValue.innerHTML = typeInput.value;
-    filterByPrice();
+    globalFilter();
 });
 
 let textInput = document.querySelector('#textInput');
 
-function filterByWord(parola){
-    let filtered = data.filter( (annuncio)=> annuncio.name.toLowerCase().includes(parola.toLowerCase()));
-    showCards(filtered);   
+function filterByWord(array){
+    let filtered = array.filter( (annuncio)=> annuncio.name.toLowerCase().includes(textInput.value.toLowerCase()));
+    return filtered;   
 }
 
 textInput.addEventListener( 'input', ()=> {
-    filterByWord(textInput.value);
+    globalFilter();
 })
 
+//creiamo una funzione che renda i filtri complementari
 
+function globalFilter(){
+   let filteredByCategory = filterByCategory(data); 
+   let filteredByPrice = filterByPrice(filteredByCategory);
+   let filteredByWord = filterByWord(filteredByPrice);
+
+   showCards(filteredByWord);
+}
 
 });
 
